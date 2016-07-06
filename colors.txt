@@ -1,0 +1,7 @@
+türkis: 37abc8
+light-blue: #80b3ff
+dark-blue: 003380
+green: 006c35
+yellow: ffd42a
+red: d45500
+orange: ff9955

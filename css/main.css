@@ -1,34 +1,97 @@
+html, body{
+  height:100%;
+  min-height: 320px;
+  min-width: 320px;
+}
 body {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
-#logo img{
+
+#overview{
   display: block;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100%;
 }
+#overviewInner{
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+#logo{
+  height: 30%;
+  max-width: 100%;
+}
+
+#logo svg{
+  height: 100%;
+}
+
+#catchPhrases{
+  max-width: 100%;
+  height: 70%;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 2s;
+  overflow: hidden;
+}
+#catchPhrases img{
+  position: relative;
+  height: 100%;
+  width: 100%; /* width changes a small bit to hide the shadows with @media further below*/
+}
+
+@media screen and (max-aspect-ratio: 1/1){
+  #logo{
+    height: 40%;
+  }
+  #catchPhrases{
+    height: 60%;
+  }
+}
+
+#Pfeil{
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+    height: 5%;
+    max-width: 40px;
+}
+
+
+
+
 
 #Angebote{
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .Angebot{
-  display: table;
-  margin: 30px auto;
+  display: block;
+  margin: 50px auto 0 auto;
 }
 .AngebotText{
-  display: inline-table;
+  display: inline-block;
   max-width: 500px;
-  padding: 20px;
+  min-height: 500px;
+}
+.AngebotText p{
+  line-height: 1.8;
+}
+.AngebotText p, h1, h2{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .AngebotBild{
-  display: block;
+  display: inline;
   max-width: 500px;
-  min-width: 300px;
+  min-width: 200px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1000px){
@@ -39,17 +102,208 @@ body {
     float: right;
   }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
+  #Angebote{
+    width: 500px;
+  }
+}
+
+
+@media screen and (max-width: 500px){
+  #Angebote{
+    width: 100%;
+  }
   .AngebotBild{
     max-width: 100%;
   }
   .AngebotText{
-    max-width: 100%
+    max-width: 100%;
+    padding-top: 0;
+
   }
+  .AngebotText h1 {
+    margin-top: 0;
+  }
+  /* put the catchphrase shadow out of the frame (fit to just the bubbles) */
+  #catchPhrases img{
+    width: 112%;
+    position: relative;
+    left: -6%;
+  }
+
 }
 
 
 .testbild{
     max-width: 100%;
     width: auto;
+}
+
+/* The animation code */
+@keyframes comeInLeft {
+    from {transform: translateX(-100px);}
+    to {transform: tranlateX(0px);}
+}
+.comeInLeft{
+  animation-name: comeInLeft;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+}
+@keyframes comeInRight {
+    from {transform: translateX(100px);}
+    to {transform: tranlateX(0px);}
+}
+.comeInRight{
+  animation-name: comeInRight;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+/* svg animation */
+
+
+/* fade in Schriftzug */
+#rect8773{
+  opacity:0;
+  animation: LogofadeIn 1.5s linear forwards;
+}
+@keyframes LogofadeIn{
+  to{opacity:0.76599995;}
+}
+
+/* draw paths: */
+#path8771, #path8769, #path8767, #path8765{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-linecap: round;
+  animation: dash 4s ease forwards;
+  animation-delay: 1.2s;
+
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Schriftzug */
+#flowRoot8789{
+  opacity: 0;
+  animation: LogofadeIn 1.2s linear forwards;
+  animation-delay: 1.2s;
+}
+
+#packages{
+  background-image: url("../img/Rpackages.png");
+  background-repeat: none;
+  background-position: center;
+  height: 500px;
+  background-size: 100%;
+}
+
+@keyframes packages{
+  from{
+    background-size: 250%;
+  }
+
+}
+.packagesAnimation{
+  animation: packages 6s linear forwards;
+}
+
+.ZwischenHeader{
+  font-size: 36pt;
+  text-align: center;
+}
+
+hr{
+  display: block;
+  width: 60%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.R{
+  display: inline-block;
+  width: 1.5em;
+  font-weight: bold;
+  background-image: url(../img/Rlogo.svg);
+  background-size: 1.5em auto;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
+.hardwareSlideshow{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.hwSlideshowInner{
+  width: 500%;
+  position: relative;
+}
+.hwSlideshowInnerAnimation{
+  animation: hwSlideshow 40s infinite backwards;
+}
+.hardwareItem{
+  float: left;
+  width: 20%;
+}
+.hardwareItem img{
+  height: auto;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hardwareItem p{
+  font-weight: bold;
+  text-align: center;
+  font-size: 16pt;
+}
+
+@keyframes hwSlideshow{
+  0%{left: 0px;}
+  10%{left: -100%;}
+  20%{left: -100%;}
+  30%{left: -200%;}
+  40%{left: -200%;}
+  50%{left: -300%;}
+  60%{left: -300%;}
+  70%{left: -400%;}
+  80%{left: -400%;}
+  90%{left: 0px;}
+  100%{left: 0px;}
+}
+
+.mehr{
+    float: right;
+}
+.mehr a{
+  text-decoration: none;
+  margin-right: 2em;
+  margin-left: 1em;
+  padding-right: 0.6em;
+  position: relative;
+  color: white;
+  top: 0.7em;
+
+  border-radius: 1em;
+  padding-left: 0.25em;
+  background-color: #3771C8;
+}
+
+.mehr a:before{
+  content: "\f0a9";
+  font-family: FontAwesome;
+  padding-right: 0.3em;
+  color: white;
+  font-size: 108%;
+  text-decoration: none;
+  text-align: bottom;
 }
