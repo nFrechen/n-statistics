@@ -1,0 +1,65 @@
+#Menu{
+  font-size: 12pt;
+  font-weight: 100;
+  position: fixed;
+  z-index: 1000;
+  left: 0px;
+  top: 0px;
+  margin: 2px 2px;
+  padding: 5px;
+  padding-right: 0.4em;
+  border: 2px solid transparent;
+}
+#Menu:before{
+  content: "\f0c9";
+  font-family: FontAwesome;
+  padding-right: 0.2em;
+  padding-left: 0.4em;
+}
+
+#MenuItems{
+  display: none;
+}
+#Menu:hover{
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+
+}
+
+#Menu:hover #MenuItems{
+  display: block;
+}
+
+#MenuItems ul{
+  margin-top: 0px;
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+#MenuItems li:before{
+  content: "\f0da";
+  font-family: FontAwesome;
+  padding-right: 0.3em;
+  padding-left: 0.4em;
+}
+#MenuItems a{
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+#MenuItems li a:hover {
+  text-shadow: 0 0 4px #80b3ff;
+  color: #003380;
+}
+
+#MenuItems li ul{
+}
+#MenuItems li ul{
+  padding-left: 10px;
+}
+#MenuItems li ul li:before{
+  content: '·';
+  font-weight: 800;
+}
