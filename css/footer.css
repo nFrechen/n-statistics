@@ -1,0 +1,33 @@
+#footer{
+  background-color: #eee;
+  border-top: 3px solid gray;
+  padding: 30px;
+}
+#footer-inner{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#footer p{
+  line-height: 1;
+}
+p{
+  padding-left: 20px;
+}
+table{
+  padding-left: 20px;
+}
+
+.Impressum{
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#footer-left{
+  float: left;
+  margin-right: 140px;
+}
+#footer-right{
+  margin-left: auto;
+  margin-right: 0;
+}
