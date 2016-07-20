@@ -390,7 +390,8 @@ hr{
 /* -> mehr Infos Buttons */
 
 .mehr{
-    float: right;
+  display: none;
+  float: right;
 }
 .mehr a{
   text-decoration: none;
