@@ -8,10 +8,16 @@
   <!-- Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700|Merriweather:400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
 
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://use.fontawesome.com/0fcc13e265.js"></script>
+
 </head>
 
 
@@ -573,30 +579,42 @@
           <p>Auf Wunsch fügen wir Ihren Daten frei verfügbare Daten wie z.B. Kartenhintergründe oder frei verfügbare Umweltdaten hinzu.</p>
         </div>
       </div>
-      <div id="Telemetrie" class="Angebot wow fadeIn" id="hardwareBild">
-        <div class="AngebotBild hardwareSlideshow">
-          <div class="hwSlideshowInner wow hwSlideshowInnerAnimation" data-wow-duration= "40s" data-wow-delay= "3s">
-            <div class="hardwareItem">
+      <div id="Telemetrie" class="Angebot" id="">
+        <div id="hardwareCarousel" class="AngebotBild carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#hardwareCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#hardwareCarousel" data-slide-to="1"></li>
+            <li data-target="#hardwareCarousel" data-slide-to="2"></li>
+            <li data-target="#hardwareCarousel" data-slide-to="3"></li>
+            <li data-target="#hardwareCarousel" data-slide-to="4"></li>
+          </ol>
+
+          <!-- slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active hardwareItem">
               <p>Raspberry Pi Zero</p>
               <img src="img/Raspberry-Zero-specs.svg" style="background-image: url(img/Raspberry-Pi-Zero.jpg)"/>
             </div>
-            <div class="hardwareItem">
+            <div class="item hardwareItem">
               <p> Particle Photon mit ARM Chip</p>
               <img src="img/particle-photon.jpg"/>
             </div>
-            <div class="hardwareItem">
+            <div class="item hardwareItem">
               <p> 1.2GHz quad-core ARMv8 Raspberry Pi mit embedded Linux</p>
               <img src="img/RPF-RP2B1GB-2-800x533.jpg"/>
             </div>
-            <div class="hardwareItem">
+            <div class="item hardwareItem">
               <p> Arduino Uno</p>
               <img src="img/50450-IMG_5222.jpg"/>
             </div>
-            <div class="hardwareItem">
+            <div class="item hardwareItem">
               <p>Adafruit Feather Fona mit GSM-Modul</p>
-              <img src="img/adafruit-feather-32u4-fona.jpg"/>
+              <img src="img/adafruit_feather_32u4_fona_module.jpg"/>
             </div>
           </div>
+
+
         </div>
         <div class="AngebotText" id="hardwareText">
           <h1>Wir bringen Ihre Daten ins Internet</h1>
