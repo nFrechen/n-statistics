@@ -6,6 +6,7 @@ html, body{
   min-height: 320px;
   min-width: 320px;
   margin: 0;
+
 }
 body {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
@@ -83,8 +84,20 @@ p{
   margin-right: auto;
   border-radius: 40px;
   background-color: white;
+  background-image: url("../img/Schraffur/Rauschen.png");
   box-shadow: 0 0 100px #FFEDDA inset, 0 0 1px 6px #006c35;
 
+}
+.Linen{
+  background-color: #BA3434;
+  background-image: url("../img/Schraffur/Linen.png");
+}
+.Striped{
+  border-radius: 40px;
+  background-color: #80b3ff;
+  background-image: url("../img/Schraffur/Stripes.png");
+  background-size: 50px;
+  box-shadow: 2px 2px 8px 5px rgba(0, 0,0, 0.3) inset;
 }
 @media screen and (max-width: 850px){
   #About{
@@ -102,7 +115,6 @@ p{
 }
 #About p{
   text-indent: 1.5em;
-  line-height: 1.5;
 }
 #About a{
   color: black;
@@ -417,12 +429,15 @@ hr{
   margin-left: auto;
   text-align: center;
 }
+#Kontakt p{
+  text-indent: 0;
+}
 #Kontakt a{
   display: inline-block;
   margin-bottom: 1em;
   text-decoration: none;
-  margin-right: 2em;
-  margin-left: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
   padding: 0.2em;
   padding-right: 0.9em;
   padding-left: 0.9em;
