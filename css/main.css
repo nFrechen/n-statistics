@@ -11,6 +11,11 @@ html, body{
 body {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
 }
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
 #content{
   margin: 0 auto;
   max-width: 1000px;
@@ -186,12 +191,14 @@ p{
 
 .Angebot{
   display: block;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 50px auto;
+  padding-bottom: 50px;
+  clear: both;
+  overflow: auto;
 }
 .AngebotText{
   display: inline-block;
   max-width: 500px;
-  min-height: 500px;
 }
 .AngebotText p{
   line-height: 1.8;
@@ -202,10 +209,10 @@ p{
 }
 
 .AngebotBild{
-  display: inline;
   max-width: 500px;
   min-width: 200px;
   margin: 0 auto;
+  padding: 0 10px 20px 10px;
 }
 @media screen and (min-width: 1000px){
   .Angebot:nth-of-type(odd) .AngebotBild{
@@ -339,6 +346,8 @@ hr{
   width: 60%;
   margin-top: 70px;
   margin-bottom: 70px;
+  clear: both;
+
 }
 
 .R{
