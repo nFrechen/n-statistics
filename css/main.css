@@ -311,6 +311,11 @@ p{
   animation: dash 4s ease 1.2s forwards;
 
 }
+@-webkit-keyframes dash{
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
