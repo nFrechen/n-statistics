@@ -259,6 +259,10 @@ p{
 }
 
 /* The animation code */
+@-webkit-keyframes comeInLeft {
+    from {transform: translateX(-100px);}
+    to {transform: tranlateX(0px);}
+}
 @keyframes comeInLeft {
     from {transform: translateX(-100px);}
     to {transform: tranlateX(0px);}
@@ -266,6 +270,10 @@ p{
 .comeInLeft{
   -webkit-animation: comeInLeft 1.2s ease-out;
   animation: comeInLeft 1.2s ease-out;
+}
+@-webkit-keyframes comeInRight {
+    from {transform: translateX(100px);}
+    to {transform: tranlateX(0px);}
 }
 @keyframes comeInRight {
     from {transform: translateX(100px);}
@@ -329,24 +337,7 @@ p{
   animation: LogofadeIn 1.2s linear 1.2s forwards;
 }
 
-#packages{
-  background-image: url("../img/Rpackages.png");
-  background-repeat: none;
-  background-position: center;
-  height: 500px;
-  background-size: 100%;
-}
 
-@keyframes packages{
-  from{
-    background-size: 250%;
-  }
-
-}
-.packagesAnimation{
-  -webkit-animation: packages 6s linear forwards;
-  animation: packages 6s linear forwards;
-}
 
 .ZwischenHeader{
   font-size: 36pt;
