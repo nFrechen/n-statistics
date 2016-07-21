@@ -72,22 +72,6 @@
          id="stop33228" />
     </linearGradient>
     <linearGradient
-       id="linearGradient9817"
-       inkscape:collect="always">
-      <stop
-         id="stop9819"
-         offset="0"
-         style="stop-color:#c87137;stop-opacity:1;" />
-      <stop
-         style="stop-color:#c87137;stop-opacity:0.87843137;"
-         offset="0.2280937"
-         id="stop9821" />
-      <stop
-         id="stop9823"
-         offset="1"
-         style="stop-color:#c87137;stop-opacity:0;" />
-    </linearGradient>
-    <linearGradient
        id="linearGradient9763"
        inkscape:collect="always">
       <stop
@@ -192,17 +176,6 @@
     </linearGradient>
     <radialGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient9817"
-       id="radialGradient9815"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.72268097,-0.00789565,0.00555704,0.58330711,-13.789285,-91.901835)"
-       cx="94.683037"
-       cy="262.22617"
-       fx="94.683037"
-       fy="262.22617"
-       r="71.248512" />
-    <radialGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient9763"
        id="radialGradient9664-0"
        gradientUnits="userSpaceOnUse"
@@ -259,7 +232,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.5342798"
-     inkscape:cx="237.90835"
+     inkscape:cx="126.45541"
      inkscape:cy="181.4853"
      inkscape:document-units="mm"
      inkscape:current-layer="layer3"
@@ -283,7 +256,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -292,15 +265,7 @@
      id="layer3"
      inkscape:label="Schatten"
      transform="translate(2.3997437,-12.962372)"
-     style="display:inline">
-    <ellipse
-       style="opacity:0.48600003;fill:url(#radialGradient9815);fill-opacity:1;stroke:none;stroke-width:2.25412893;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path22589"
-       cx="56.093536"
-       cy="60.309017"
-       rx="54.003822"
-       ry="43.621063" />
-  </g>
+     style="display:inline" />
   <g
      inkscape:groupmode="layer"
      id="layer4"
