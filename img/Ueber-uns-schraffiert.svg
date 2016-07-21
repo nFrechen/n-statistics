@@ -7,13 +7,50 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
-   viewBox="0 0 59.353626 12.620635"
-   height="12.620635mm"
-   width="59.353626mm">
+   viewBox="0 0 71.353622 16.620634"
+   inkscape:version="0.91+devel+osxmenu r12922"
+   sodipodi:docname="Ueber-uns-schraffiert.svg"
+   preserveAspectRatio="&quot;xMidYMid meet&quot;"
+   width="71.353622mm"
+   height="16.620634mm">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     id="namedview8333"
+     showgrid="false"
+     fit-margin-left="6"
+     fit-margin-right="6"
+     fit-margin-top="2"
+     fit-margin-bottom="2"
+     inkscape:zoom="1.7697248"
+     inkscape:cx="184.84927"
+     inkscape:cy="31.409074"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs4">
+    <style
+       type="text/css"
+       id="style8322">
+        @font-face {
+            font-family: 'Open Sans';
+            src: url('../font/Open_Sans/OpenSans-Regular.ttf') format(ttf);
+        }
+     </style>
     <pattern
        patternTransform="matrix(0.02587375,-0.03077615,0.02059862,0.01731742,32.104412,42.188007)"
        id="pattern8939"
@@ -55,16 +92,17 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-12.981461,-32.513916)"
+     transform="translate(-6.9814605,-30.513916)"
      id="layer1">
     <text
        transform="scale(1.0100084,0.99009082)"
        id="text9711"
        y="45.248772"
        x="41.930191"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.30642509px;line-height:125%;font-family:FontAwesome;-inkscape-font-specification:FontAwesome;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:url(#pattern8939);fill-opacity:1;stroke:#800000;stroke-width:0.41100004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Open Sans', Verdana, Helvetica, sans-serif;-inkscape-font-specification:'Open Sans Bold';fill:url(#pattern8939);fill-opacity:1;stroke:#800000;stroke-width:0.41100004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.30642509px;line-height:125%;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:url(#pattern8939);fill-opacity:1;stroke:#800000;stroke-width:0.41100004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Open Sans', Verdana, Helvetica, sans-serif;fill:url(#pattern8939);fill-opacity:1;stroke:#800000;stroke-width:0.41100004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          y="45.248772"
          x="41.930191"
          id="tspan9713">Über uns</tspan></text>
