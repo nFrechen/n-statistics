@@ -342,6 +342,7 @@ p{
 }
 
 hr{
+  border-color: #ccc;
   display: block;
   width: 60%;
   margin-top: 70px;
