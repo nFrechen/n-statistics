@@ -49,8 +49,8 @@ p{
   max-width: 100%;
   height: 70%;
   opacity: 0;
-  -webkit-animation:fadeIn 2s 2s forwards;
-  animation: fadeIn 2s 2s forwards;
+  -webkit-animation:fadeIn 2s 3s forwards;
+  animation: fadeIn 2s 3s forwards;
   overflow: hidden;
 }
 #catchPhrases img{
@@ -312,20 +312,38 @@ p{
 
 /* draw paths: */
 #path8771, #path8769, #path8767, #path8765{
+  opacity: 0;
   stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
+  stroke-dashoffset: 0;
   stroke-linecap: round;
   -webkit-animation: dash 4s ease 1.2s forwards;
   animation: dash 4s ease 1.2s forwards;
 
 }
 @-webkit-keyframes dash{
-  to {
+  0%{
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    stroke-dashoffset: 1000;
+  }
+  100%{
+    opacity: 1;
     stroke-dashoffset: 0;
   }
 }
 @keyframes dash {
-  to {
+  0%{
+    opacity: 0;
+    stroke-dashoffset: 1000;
+  }
+  20% {
+    opacity: 1;
+    stroke-dashoffset: 1000;
+  }
+  100%{
+    opacity: 1;
     stroke-dashoffset: 0;
   }
 }
@@ -333,8 +351,8 @@ p{
 /* Schriftzug */
 #flowRoot8789{
   opacity: 0;
-  -webkit-animation: LogofadeIn 1.2s linear 1.2s forwards;
-  animation: LogofadeIn 1.2s linear 1.2s forwards;
+  -webkit-animation: LogofadeIn 1.2s linear 2.2s forwards;
+  animation: LogofadeIn 1.2s linear 2.2s forwards;
 }
 
 
