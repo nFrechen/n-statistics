@@ -278,6 +278,11 @@ p{
   animation-timing-function: ease-out;
 }
 
+@-webkit-keyframes fadeIn {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
 @keyframes fadeIn{
   from{opacity: 0;}
   to{opacity: 1;}
@@ -290,6 +295,9 @@ p{
 #rect8773{
   opacity:0;
   animation: LogofadeIn 1.5s linear forwards;
+}
+@-webkit-keyframes LogofadeIn {
+  to{opacity:0.76599995;}
 }
 @keyframes LogofadeIn{
   to{opacity:0.76599995;}
