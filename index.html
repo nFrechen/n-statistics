@@ -15,6 +15,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+  <!-- smooth scroll to page anchors -->
+  <!-- source: https://css-tricks.com/examples/SmoothPageScroll/ -->
+  <script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+	</script>
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -54,13 +73,13 @@
 
           <ul>
             <li>
-              <a href="#Datenauswertung in R">Datenauswertung in R</a>
+              <a href="#Datenauswertung_in_R">Datenauswertung in R</a>
             </li>
             <li>
-              <a href="#Interaktive Grafiken">Interaktive Grafiken</a>
+              <a href="#Interaktive_Grafiken">Interaktive Grafiken</a>
             </li>
             <li>
-              <a href="#Dynamische Dokumente">Dynamische Dokumente</a>
+              <a href="#Dynamische_Dokumente">Dynamische Dokumente</a>
             </li>
             <li>
               <a href="#Kontext">Kontext für Ihre Daten</a>
@@ -486,13 +505,13 @@
     </div>
     -->
     <div style="clear: left;" class="AboutNarrow">
-      <p>Unsere Kompetenz bildet sich  aus über sieben Jahre langer Erfahrung mit der Datenauswertung in der <b><a href="#Datenauswertung in R">Programmiersprache R</a></b> im wissenschaftlichen Kontext. nStatistics ist eine Ausgründung der <b><a href="http://www.b-tu.de/">BTU Cottbus</a></b> und des <b><a href="http://fablab-cottbus.de">fablab</b> (fabrication laboratory) <b>Cottbus</a></b>, mit Hintergründen und Kontakten in der Hardware-Entwicklung, sowie der Aufzeichnung und Auswertung von Umweltdaten.
+      <p>Unsere Kompetenz bildet sich  aus über sieben Jahre langer Erfahrung mit der Datenauswertung in der <b><a href="#Datenauswertung_in_R">Programmiersprache R</a></b> im wissenschaftlichen Kontext. nStatistics ist eine Ausgründung der <b><a href="http://www.b-tu.de/">BTU Cottbus</a></b> und des <b><a href="http://fablab-cottbus.de">fablab</b> (fabrication laboratory) <b>Cottbus</a></b>, mit Hintergründen und Kontakten in der Hardware-Entwicklung, sowie der Aufzeichnung und Auswertung von Umweltdaten.
       </p>
     </div>
 
 <!--
     <p>
-      Wir arbeiten dabei mit offenen und weit verbreiteten Standards. So verwenden wir für unsere Datenauswertungen die Open-Source <b><a href="#Datenauswertung in R">Statistiksoftware "R"</a></b>, für die eine Unmenge an frei verfügbaren Auswertepaketen zur Verfügung steht. Eine große Community aus Mitarbeitern von Universitäten und anderen Institutionen entwickelt an dieser Software und Sie können all dies ohne Lizenzgebühren nutzen. Für unsere Datenlogger und die Datenfernübertragung (Telemetrie) verwenden wir offene Protokolle wie MQTT und die <a href="#Telemetrie">neueste Generation vielseitig einsetzbarer Hardware</a>, die ebenso von einer großen Community mit offener Dokumentation, Programmcodes und Bauplänen komplementiert wird. Falls Sie das wünschen ergänzen wir die Ergebnisse aus Ihren Daten mit frei verfügbaren offenen Datenquellen. Wir kennen uns aus im Dschungel der öffentlich verfügbaren Datenquellen und haben schon einige dieser Daten nutzbar gemacht.
+      Wir arbeiten dabei mit offenen und weit verbreiteten Standards. So verwenden wir für unsere Datenauswertungen die Open-Source <b><a href="#Datenauswertung_in_R">Statistiksoftware "R"</a></b>, für die eine Unmenge an frei verfügbaren Auswertepaketen zur Verfügung steht. Eine große Community aus Mitarbeitern von Universitäten und anderen Institutionen entwickelt an dieser Software und Sie können all dies ohne Lizenzgebühren nutzen. Für unsere Datenlogger und die Datenfernübertragung (Telemetrie) verwenden wir offene Protokolle wie MQTT und die <a href="#Telemetrie">neueste Generation vielseitig einsetzbarer Hardware</a>, die ebenso von einer großen Community mit offener Dokumentation, Programmcodes und Bauplänen komplementiert wird. Falls Sie das wünschen ergänzen wir die Ergebnisse aus Ihren Daten mit frei verfügbaren offenen Datenquellen. Wir kennen uns aus im Dschungel der öffentlich verfügbaren Datenquellen und haben schon einige dieser Daten nutzbar gemacht.
     </p>
     </div>
     -->
@@ -549,7 +568,7 @@
       </div>
       <hr/>
       <h1 id="Vorgehen" class="ZwischenHeader">Unser Vorgehen</h1>
-      <div id="Datenauswertung in R" class="Angebot">
+      <div id="Datenauswertung_in_R" class="Angebot">
         <img src="img/R-image.svg" alt="dynamic documents with knitr" class="AngebotBild"/>
         <div class="AngebotText">
           <h1>Daten&shy;aus&shy;wertung in R</h1>
@@ -557,7 +576,7 @@
           <span class="mehr"><a href="R.html">mehr Infos</a></span></p>
         </div>
       </div>
-      <div id="Interaktive Grafiken" class="Angebot">
+      <div id="Interaktive_Grafiken" class="Angebot">
         <img src="img/Web-App.png" alt="dynamic documents with knitr" class="AngebotBild"/>
         <div class="AngebotText">
           <h1>Interaktive Grafiken</h1>
@@ -565,7 +584,8 @@
           <span class="mehr"><a href="html5-technologies.html">mehr Infos</a></span></p>
         </div>
       </div>
-      <div id="Dynamische Dokumente" class="Angebot">
+
+      <div id="Dynamische_Dokumente" class="Angebot">
         <img src="img/knitr.png" alt="dynamic documents with knitr" class="AngebotBild"/>
         <div class="AngebotText">
           <h1>Dynamische Dokumente</h1>
@@ -573,6 +593,7 @@
           <span class="mehr"><a href="dynamic-documents.html">mehr Infos</a></span></p>
         </div>
       </div>
+
       <div id="Kontext" class="Angebot">
         <img src="img/shiny-app.png" alt="dynamic documents with knitr" class="AngebotBild"/>
         <div class="AngebotText">
