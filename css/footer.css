@@ -1,7 +1,8 @@
 #footer{
-  background-color: #eee;
-  border-top: 3px solid gray;
+  border-top: 2px solid #333;
   padding: 30px;
+  background: url("../img/Schraffur/Rauschen.png");
+  box-shadow: 0 30px  40px -40px #38517C inset;
 }
 #footer p{
   line-height: 1;
