@@ -1,0 +1,57 @@
+img{
+  max-width: 500px;
+  margin: auto auto;
+  display: block;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+.randomize{
+  margin-bottom: 50px;
+}
+.randomize div{
+  margin: 10px;
+  max-width: 200px;
+  text-align: center;
+  line-height: 1.1;
+  float: left;
+}
+.randomize div a{
+  font-weight: bold;
+}
+.randomize div p{
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.randomize div:nth-child(even){
+  float: right;
+}
+.randomize div:nth-child(3n){
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.randomize div:nth-child(5n){
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.randomize div:last-child{
+  float: none;
+  clear: both;
+}
+/*.panel-default > .panel-heading{
+  color: #FFF;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #5B91C8, #45B33A);
+}
+.panel-group .panel{
+  border-radius: 8px;
+}
+.panel-heading{
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}*/
