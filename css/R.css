@@ -18,7 +18,7 @@
   max-width: 1207px;
   margin: 0 auto;
   display: table;
-  position: absolute;
+  position: fixed;
   height: 60px;
 }
 #logo-compact{
