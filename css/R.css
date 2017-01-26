@@ -15,8 +15,6 @@
 }
 .menu-stripe:first-child{
   width: 100%;
-  max-width: 1207px;
-  margin: 0 auto;
   display: table;
   position: fixed;
   height: 60px;
@@ -39,12 +37,11 @@
 .inner{
   margin-left: 0;
   margin-right: auto
-  margin-top: -20px;
   width: 100%;
 }
 #back-to-main-arrow{
   display: inline-block;
-  margin-left: 0px;
+  margin-left: 10px;
   margin-right: 2px;
   width: 1.0em;
   color: #337AB7;
